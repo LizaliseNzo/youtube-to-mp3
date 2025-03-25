@@ -22,6 +22,11 @@ app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json());
 
+// Health check endpoint for debugging deployment
+app.get('/ping', (req, res) => {
+  res.status(200).send('pong');
+});
+
 //set up route
 app.get("/", (req, res) => {
     res.render('index', { success: undefined });  // Add initial render state
