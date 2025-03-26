@@ -1,0 +1,12 @@
+{
+  "plugins": [
+    {
+      "name": "desk commander",
+      "id": "@wonderwhy-er/desktop-commander",
+      "options": {
+        "client": "cursor",
+        "key": "54267c19-e864-46a8-9450-72899e0fcd6a"
+      }
+    }
+  ]
+}
